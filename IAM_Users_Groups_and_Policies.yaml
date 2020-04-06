@@ -31,13 +31,17 @@ Resources:
     Properties:
       LoginProfile:
         Password: !Ref 'Password'
-      UserName: !Ref 'UserGroupName'
-  CFNAdminGroup:
+      UserName: !Ref 'UserGivenName'
+  CFNUserGroup:
     Type: AWS::IAM::Group
     Properties:
+      GroupName: !Ref 'UserGroupName'
+  CFNAdminGroup:
+    Type:Type: AWS::IAM::Group
+    Properties:
     GroupName: Admin Group
-  Users:
-    Type: AWS::IAM::UserToGroupAddition
+    User:
+      Type: AWS::IAM::UserToGroupAddition
     Properties:
       GroupName: !Ref 'CFNUserGroup'
       Users: [!Ref 'CFNUser']
