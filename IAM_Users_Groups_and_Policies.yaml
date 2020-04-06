@@ -37,7 +37,7 @@ Resources:
     Properties:
       GroupName: !Ref 'UserGroupName'
   CFNAdminGroup:
-    Type:Type: AWS::IAM::Group
+    Type: AWS::IAM::Group
     Properties:
       GroupName: Admin Group
     Users:
