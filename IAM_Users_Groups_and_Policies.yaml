@@ -32,8 +32,6 @@ Resources:
       LoginProfile:
         Password: !Ref 'Password'
       UserName: !Ref 'UserGroupName'
-  CFNUserGroup:
-    Type: AWS::IAM::Group
   CFNAdminGroup:
     Type: AWS::IAM::Group
     Properties:
