@@ -39,12 +39,12 @@ Resources:
   CFNAdminGroup:
     Type:Type: AWS::IAM::Group
     Properties:
-    GroupName: Admin Group
+      GroupName: Admin Group
     User:
       Type: AWS::IAM::UserToGroupAddition
-    Properties:
-      GroupName: !Ref 'CFNUserGroup'
-      Users: [!Ref 'CFNUser']
+      Properties:
+        GroupName: !Ref 'CFNUserGroup'
+        Users: [!Ref 'CFNUser']
   Admins:
     Type: AWS::IAM::UserToGroupAddition
     Properties:
