@@ -20,7 +20,7 @@ Parameters:
     ConstraintDescription: the UserGivenName must be between 4 and 25 characters
   UserGroupName:  
     NoEcho: 'false'
-    Type: - String
+    Type: String
     Description: New UserGroup name 
     MinLength: '5'
     MaxLength: '30'
