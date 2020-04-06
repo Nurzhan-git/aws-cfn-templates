@@ -10,7 +10,7 @@ Parameters:
     Description: New account password
     MinLength: '3'
     MaxLength: '41'
-    ConstraintDescription: the password must be between 1 and 41 characters
+    ConstraintDescription: the password must be between 3 and 41 characters
   UserGivenName:  
     NoEcho: 'false'
     Type: String
